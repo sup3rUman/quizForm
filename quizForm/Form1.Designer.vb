@@ -32,7 +32,7 @@ Partial Class Form1
         ' btnSubmit
         ' 
         btnSubmit.BackColor = Color.IndianRed
-        btnSubmit.FlatStyle = FlatStyle.Flat
+        btnSubmit.FlatStyle = FlatStyle.Popup
         btnSubmit.Location = New Point(241, 284)
         btnSubmit.Name = "btnSubmit"
         btnSubmit.Size = New Size(190, 63)
@@ -65,10 +65,12 @@ Partial Class Form1
         ' 
         lblResult.AutoSize = True
         lblResult.BackColor = Color.LightGreen
+        lblResult.Font = New Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point)
         lblResult.Location = New Point(241, 123)
         lblResult.Name = "lblResult"
-        lblResult.Size = New Size(0, 15)
+        lblResult.Size = New Size(113, 17)
         lblResult.TabIndex = 3
+        lblResult.Text = "Feedback go here"
         ' 
         ' txtAnswer
         ' 
