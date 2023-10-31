@@ -7,7 +7,7 @@ Public Class Form1
         "Which planet is known as the Red Planet?",
         "How many continents are there?",
         "What is the chemical symbol for gold?",
-        " Who wrote the play Romeo and Juliet?"}
+        " Who wrote the play ""Romeo and Juliet""?"}
 
     Dim answers() As String = {"nairobi", "mars", "7", "au", "william shakespeare"}
 
@@ -17,8 +17,6 @@ Public Class Form1
     ' Index to keep track of the current question being displayed
     Dim currentQuestionIndex As Integer = 0
 
-
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Set the focus to the txtAnswer textbox when the form loads
         txtAnswer.Focus()
@@ -26,9 +24,6 @@ Public Class Form1
         'Display the first question
         lblQuestion.Text = questions(currentQuestionIndex)
         lblResult.Text = String.Empty
-
-
-
 
     End Sub
 
@@ -67,22 +62,13 @@ Public Class Form1
 
                 End If
 
-
-
             Next
             Dim resultMessage As String = "Quiz completed. You got " & correctCount & " out of " & questions.Length & " questions correct."
             MessageBox.Show(resultMessage, "Quiz Completed")
+
+            'Close the form
             Me.Close()
         End If
     End Sub
 
-    Private Sub txtAnswer_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtAnswer.KeyPress
-
-        ' Check if the Enter key is pressed
-        If e.KeyChar = ChrW(Keys.Enter) Then
-            ' If Enter key is pressed, consume the key press event
-            e.Handled = True
-        End If
-
-    End Sub
 End Class

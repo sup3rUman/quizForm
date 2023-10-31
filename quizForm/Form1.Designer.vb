@@ -82,6 +82,7 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
+        AcceptButton = btnSubmit
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.LightGreen
